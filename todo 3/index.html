@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Dashboard</h2>
+                <button class="open-btn">Добавить задачу</button>
+            </div>
+            <div class="section">
+                <h3>Показать задачи как:</h3>
+                <span class="section__btn active">Таблица</span>
+                <span class="section__btn plite">Плитка</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Заголовок задачи</th>
+                        <th>Описание задачи</th>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th>Выполнено</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="container__plite"></div>
+        <div class="modal">
+            <form action="#" name="task">
+                <h2>Добавить</h2>
+                <input type="text" placeholder="Заголовок" name="title">
+                <input type="text" placeholder="Описание" name="description">
+                <input type="text" placeholder="Дата" name="date">
+                <input type="text" placeholder="Время" name="time">
+                <input type="text" placeholder="Тип задачи" name="completeds">
+                <button class="close-btn">Добавить</button>
+            </form>
+        </div>
+        <div class="modal__bg"></div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
